@@ -22,7 +22,7 @@ document.onload = greeting()
 
 function showMessage(){
     let message = "Build a " + createBuzzwordPhrase();
-    words.innerHTML = ;
+    words.innerHTML = message;
 }
 
 
