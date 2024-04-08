@@ -8,7 +8,7 @@ function changeColour(colour){
 
 //3. link element, event to the functionality
 // i.e add an event listener
-square.addEventListener('click',(event) => changeColour('green'))
+square.addEventListener('click',(event) => showMessage())
 square.addEventListener('click',(event) => changeColour('grey'))
 square.addEventListener('click',(event) => changeColour('red'))
 
@@ -17,9 +17,13 @@ function greeting(){
     console.log("Welcome to Flatland")
     words.innerHTML = "Welcome to Flatland.<br> I am Square!"
 }
-words.addEventListener('load',(event) => (greeting))
+//words.addEventListener('load',(event) => (greeting))
+document.onload = greeting()
 
-
+function showMessage(){
+    let message = "Build a " + createBuzzwordPhrase();
+    words.innerHTML = ;
+}
 
 
 function createBuzzwordPhrase() {
