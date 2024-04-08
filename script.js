@@ -12,7 +12,12 @@ square.addEventListener('click',(event) => changeColour('green'))
 square.addEventListener('click',(event) => changeColour('grey'))
 square.addEventListener('click',(event) => changeColour('red'))
 
-
+let words = document.getElementById('words')
+function greeting(){
+    console.log("Welcome to Flatland")
+    words.innerHTML = "Welcome to Flatland.<br> I am Square!"
+}
+words.addEventListener('load',(event) => (greeting))
 
 
 
