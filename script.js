@@ -1,6 +1,16 @@
 // 1. locat the Element(s)
-let square = document.getElementById
+let square = document.getElementById('square')
 
+//2. write the finctionality needed when event occurs
+function changeColour(colour){
+    square.style.background = colour;
+}
+
+//3. link element, event to the functionality
+// i.e add an event listener
+square.addEventListener('click',(event) => changeColour('green'))
+square.addEventListener('click',(event) => changeColour('grey'))
+square.addEventListener('click',(event) => changeColour('red'))
 
 
 
