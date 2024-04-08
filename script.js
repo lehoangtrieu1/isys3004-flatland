@@ -1,5 +1,5 @@
 // 1. locat the Element(s)
-
+let square = document.getElementById
 
 
 
