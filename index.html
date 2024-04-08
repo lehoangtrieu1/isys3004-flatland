@@ -13,7 +13,15 @@
     <div id="words">
         <!-- Text Will Go Here -->
     </div>
-    <div id="square" onclick="document.getElementById('square').style.background = 'green'"></div>
+    <div id="square" onclick="chnageColour(green)" onmouseover="changeColour(gray)" onmouseout="changeColour(red)"></div>
+<script>
+let square = document.getElementById('square')
+
+    function chnageColour(colour){
+        square.style.background = colour;
+    }
+</script>
+
 </body>
 
 </html>
